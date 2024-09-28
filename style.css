@@ -132,4 +132,8 @@
         text-align: center;
     }
   }
-  
+  .img-positioning {
+    display: block;
+    margin: 30px auto;
+    width: 75%;
+  }

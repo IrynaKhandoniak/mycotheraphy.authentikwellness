@@ -1,21 +1,21 @@
 :root {
-    --primary-color: #8b4513; /* Rich sienna brown */
-    --secondary-color: #faf3e0; /* Light cream background */
-    --text-color: #3d2c1e; /* Dark, deep brown for readability */
-    --highlight-color: #d2b48c; /* Tan for subtle highlights */
-    --hover-color: #a0522d; /* Warm brown for hover effects */
+    --primary-color: #3b5c54; /* Calming green for wellness and balance */
+    --secondary-color: #f9f9f9; /* Light, nurturing cream background */
+    --text-color: #555555; /* Darker gray for readability */
+    --highlight-color: #e0e0e0; /* Soft, neutral gray for highlighted sections */
+    --hover-color: #2e7d64; /* A deeper green for hover effects */
 }
 
 body {
     margin: 60px auto;
     max-width: 800px;
     background-color: var(--secondary-color);
-    font-family: 'Roboto', sans-serif; /* Modern, clean font for better readability */
+    font-family: 'Roboto', sans-serif; /* Clean, modern font for readability */
     color: var(--text-color);
     line-height: 1.75;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 }
 
 a {
@@ -33,26 +33,30 @@ a:hover {
     margin-bottom: 30px;
     font-size: 18px;
     font-weight: bold;
+    color: var(--primary-color);
 }
 
 h1 {
     text-align: center;
-    font-size: 48px; /* Adjusted for better visibility */
+    font-size: 42px; /* Adjusted for a soft, welcoming feel */
     color: var(--primary-color);
+    font-weight: 600;
 }
 
 h2 {
     text-align: center;
-    font-size: 32px;
+    font-size: 28px;
     color: var(--text-color);
     margin-top: 40px;
+    font-weight: 500;
 }
 
 h3 {
     text-align: center;
-    font-size: 24px;
+    font-size: 22px;
     color: var(--primary-color);
     margin: 20px 0;
+    opacity: 0.85; /* Slight opacity for a more relaxed look */
 }
 
 .allergies-paragraphs {
@@ -63,10 +67,11 @@ p {
     background-color: var(--highlight-color);
     padding: 20px;
     border-radius: 10px;
-    font-size: 18px; /* Increased for better readability */
+    font-size: 18px; /* Readable and approachable */
     color: var(--text-color);
     margin-bottom: 20px;
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+    text-align: center; /* Center-align for a welcoming tone */
 }
 
 /* Contact Section */
@@ -78,9 +83,9 @@ p {
 #contact a {
     font-size: 20px;
     color: var(--primary-color);
-    text-decoration: underline; /* To signify it's a link */
+    text-decoration: underline; /* Underline to clearly show it's a link */
 }
 
 #contact a:hover {
-    text-decoration: none; /* Removes underline on hover */
+    text-decoration: none; /* Cleaner hover effect */
 }

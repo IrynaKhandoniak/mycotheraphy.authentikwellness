@@ -59,6 +59,21 @@ p {
   line-height: 1.75; /* More spacing between lines for comfort */
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
 }
+.button {
+  padding: 15px 40px;
+  border-radius: 30px;
+  font-size: 18px;
+  font-weight: 600;
+  text-decoration: none;
+  color: white;
+  background: linear-gradient(135deg, var(--primary-color), var(--hover-color));
+  transition: all 0.4s ease;
+  display: inline-block;
+  margin-top: 20px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  position: relative;
+  overflow: hidden;
+}
 
 /* Section for user greeting */
 .wellness-garden {
@@ -104,7 +119,7 @@ p .icon img {
 
 .navigation-links li {
   display: inline-block;
-  margin: 0 25px; /* More space between each item */
+  margin: 0 15px; /* Adjusted space between each item */
   margin-bottom: 20px;
 }
 
@@ -112,47 +127,46 @@ p .icon img {
   padding: 12px 30px;
   border-radius: 25px;
   text-decoration: none;
-  background-color: var(--primary-color);
+  background: linear-gradient(135deg, var(--primary-color), var(--hover-color));
   color: white;
   font-size: 16px;
-  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  font-weight: 600;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* Subtle shadow for a raised effect */
+  position: relative;
+  overflow: hidden;
+}
+.navigation-links a::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 300%;
+  height: 300%;
+  background: rgba(255, 255, 255, 0.15); /* Light overlay for shine effect */
+  transition: all 0.75s ease-in-out;
+  transform: translate(-50%, -50%) scale(0);
+  border-radius: 50%;
+}
+
+.navigation-links a:hover::before {
+  transform: translate(-50%, -50%) scale(1); /* Expands overlay on hover */
 }
 
 .navigation-links a:hover {
-  background-color: var(--hover-color);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect on hover */
+  background: linear-gradient(135deg, var(--hover-color), var(--primary-color));
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25); /* Deeper shadow on hover */
+  transform: scale(1.05); /* Slightly enlarges the button */
 }
 
-/* Simple responsive design */
-@media (max-width: 600px) {
-  h1 {
-    font-size: 36px;
-  }
 
-  h2 {
-    font-size: 24px;
-  }
-
-  p {
-    font-size: 16px;
-  }
-
-  .navigation-links li {
-    display: block;
-    margin-bottom: 15px;
-  }
-
-  .navigation-links a {
-    width: 100%;
-    display: block;
-    text-align: center;
-  }
-}
+/* Image positioning */
 .img-positioning {
   display: block;
   margin: 30px auto;
-  width: 75%
+  width: 75%;
 }
+
 /* Contact Section */
 #contact {
   background-color: var(--primary-color); /* Matches the wellness garden section */
@@ -192,6 +206,29 @@ p .icon img {
 
 /* Responsive design adjustments */
 @media (max-width: 600px) {
+  h1 {
+    font-size: 36px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+
+  .navigation-links li {
+    display: block;
+    margin-bottom: 15px;
+  }
+
+  .navigation-links a {
+    width: 100%;
+    display: block;
+    text-align: center;
+  }
+
   #contact {
     padding: 20px;
   }

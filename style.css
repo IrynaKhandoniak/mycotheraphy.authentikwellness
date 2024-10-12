@@ -187,7 +187,7 @@ p .icon img {
 }
 
 #contact a {
-  color: white; /* Keeps the link white */
+  color: darkcyan; /* Keeps the link white */
   font-size: 18px;
   text-decoration: underline; /* Makes it clear it's a clickable link */
   font-weight: 500;
@@ -240,4 +240,11 @@ p .icon img {
   #contact a {
     font-size: 16px;
   }
+}
+a {
+  color: #004d00; /* Dark Green color */
+}
+
+a:hover {
+  color: #003300; /* Darker Green on hover */
 }
